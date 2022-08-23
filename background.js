@@ -1,6 +1,5 @@
-// Since injected functions with chrome
-// content scripts are a copy, not a reference.
-// Trying to access any functions or variables out of this scope wouldn't work.
+// Since injected functions with chrome content scripts are a copy, not a reference,
+// trying to access any functions or variables out of this scope won't work.
 // So everything will go inside restoreSubredditStyleToggle().
 async function restoreSubredditStyleToggle() {
     // --------------------------------------------------------------
@@ -21,7 +20,7 @@ async function restoreSubredditStyleToggle() {
         }
     }
     function unhideFormToggle() {
-        // Adjusting transform: translate for any amount seems to bring it back to visibility.
+        // Adjusting transform: translate for any amount seems to bring the form back to visibility.
         toggleForm.style.transform = 'translateY(8px)'
         console.log(`🐠🐠 Found toggle form after ${waited}ms 🐠🐠`)
     }
