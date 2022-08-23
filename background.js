@@ -13,7 +13,7 @@ async function restoreSubredditStyleToggle() {
         return new Promise(resolve => setTimeout(resolve, ms))
     }
     async function getFormToggle() {
-        console.log('🐠 Waiting for annoying modal... 🐠')
+        console.log('🐠 Waiting for form to show up...')
         while (!toggleForm) {
             toggleForm = document.querySelector('.res-sr-style-toggle')
             await wait(pollrate)
@@ -23,12 +23,12 @@ async function restoreSubredditStyleToggle() {
     function unhideFormToggle() {
         // Adjusting transform: translate for any amount seems to bring it back to visibility.
         toggleForm.style.transform = 'translateY(8px)'
-        console.log(`🐠 Found toggle form after ${waited}ms 🐠`)
+        console.log(`🐠🐠 Found toggle form after ${waited}ms 🐠🐠`)
     }
     // ------------------------------------------------------------------------
     await getFormToggle()
     unhideFormToggle()
-    console.log(`🐠 All done after ${waited}ms 🐠`)
+    console.log(`🐠🐠🐠 All done after ${waited}ms 🐠🐠🐠`)
 }
 
 // -------------------------------------------------------------
