@@ -20,3 +20,5 @@ The intent of this script/extension is to give you *back* the option to toggle i
 # It's not working!  
   
 Create a github issue here with the name of the subreddit it isn't working on so I can check it out and see if a different method for restoration is needed.
+  
+Double check to make sure the extension has successfully loaded with no errors in the "Manage Extensions" menu.
